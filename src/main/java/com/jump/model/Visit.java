@@ -18,7 +18,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Entity
 public class Visit {
-	
 	@Id
 	@GeneratedValue
 	private int id;
@@ -32,6 +31,9 @@ public class Visit {
 	@Column(name="PETID")
 	private int petId;
 	
-	@Column(name="APTID")
-	private int aptId;
+	@Column(name="CUSTOMERID")
+	private int customerId;
+	
+	@Column(name="DOCTORID")
+	private int doctorId;
 }

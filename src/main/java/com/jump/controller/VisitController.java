@@ -24,7 +24,7 @@ import com.jump.model.Visit;
 import com.jump.service.VisitService;
 
 @RestController
-@RequestMapping("visit")
+//@RequestMapping("visit")
 public class VisitController {
 	
 	@Autowired
@@ -51,7 +51,6 @@ public class VisitController {
 			throw new VisitIdMismatchException();
 		}
 	}
-	
 	
 	@GetMapping
 	public ResponseEntity<List<Visit>> getVisits() {
