@@ -45,5 +45,9 @@ public class VisitService {
 		getVisitById(visit.getId());
 		return visitRepo.save(visit);
 	}
+
+	public List<Visit> getVisitsByCustomerId(int customer_id) {
+		return visitRepo.findVisitsByCustomerId(customer_id);
+	}
 	
 }

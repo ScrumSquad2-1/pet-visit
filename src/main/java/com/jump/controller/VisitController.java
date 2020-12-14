@@ -63,6 +63,12 @@ public class VisitController {
 		return ResponseEntity.ok(result);
 	}
 	
+	@GetMapping("/customer/{customer_id}")
+  	public ResponseEntity<List<Visit>> getVisitsByCustomerId(@PathVariable int customer_id) {
+		List<Visit> result = visitServ.getVisitsByCustomerId(customer_id);
+		return ResponseEntity.ok(result);
+	}
+	
 	@GetMapping("/pet/{pet_id}")
 	public ResponseEntity<List<Visit>> getVisitsByPetId(@PathVariable int pet_id) {
 		List<Visit> result = visitServ.getVisitsByPetId(pet_id);

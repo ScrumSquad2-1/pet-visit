@@ -14,6 +14,7 @@ public interface VisitRepository extends JpaRepository<Visit, Integer>{
 	List<Visit> findVisitsByPetId(int id);
 
 	List<Visit> findVisitsByVisitDate(String date);
-	
+
+	List<Visit> findVisitsByCustomerId(int customer_id);
 
 }
